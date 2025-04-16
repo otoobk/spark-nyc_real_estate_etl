@@ -1,0 +1,4 @@
+paths:
+  input: "data/raw/"
+  processed: "data/pre_processed/"
+  output: "data/processed/"
