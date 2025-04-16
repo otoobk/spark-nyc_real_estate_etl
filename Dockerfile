@@ -21,6 +21,8 @@ RUN /env/bin/pip install --no-cache-dir -r /app/requirements.txt
 # Copy app to container
 COPY src/ /app/src
 
+COPY config.yaml /app/config.yaml
+
 # Set environment variables for Spark
 ENV SPARK_HOME=/opt/bitnami/spark
 ENV PYSPARK_PYTHON=/env/bin/python
